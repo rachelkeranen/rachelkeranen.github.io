@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% page.title %} | {% site.my_name %}</title>
+    <meta name="description" content="{% site.description %}">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css">
+  </head>
+
+  <body>
+    <header>
+      <h1><a href='/'>{% site.my_name %}</a></h1>
+      {% include navigation.html %}
+    </header>
+
+    <main>
+      {% if page.show_title %}<h2>{% page.title %}</h2>{% endif %}
+      {% content %}
+    </main>
+
+    <footer>
+      <p>&copy;{% site.date | date: "%Y" %} {% site.my_name %}</p>
+      {% include navigation.html %}
+    </footer>
+  </body>
+</html>
