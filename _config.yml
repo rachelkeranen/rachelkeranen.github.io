@@ -17,3 +17,7 @@ defaults:
     values:
       layout: "page"
       show_title: true
+
+kramdown:
+  entity_output: as_input
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
