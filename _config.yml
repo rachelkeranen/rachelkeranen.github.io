@@ -1,8 +1,23 @@
 # Site settings
-title: Rachel Keranen
+my_name: Rachel Keranen
 description: "Writer. Editor. Wanderer."
 baseurl: ""
+safe: true
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Page defaults
+defaults:
+  -
+    scope:
+      path: "" # == all files
+      type: "page"
+    values:
+      layout: "page"
+      show_title: true
+
+kramdown:
+  entity_output: as_input
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
