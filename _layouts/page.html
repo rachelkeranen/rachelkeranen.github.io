@@ -3,10 +3,16 @@
   <head>
     <title>{{ page.title }} | {{ site.my_name }}</title>
     <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css">
   </head>
 
   <body>
+
+    <div class='decorative'>
+      <div class='inner'></div>
+    </div>
+
     <header>
       <h1><a href='/'>{{ site.my_name }}</a></h1>
       {% include navigation.html %}
@@ -19,7 +25,7 @@
 
     <footer>
       <p>&copy;{{ site.time | date: "%Y" }} <a href="/">{{ site.my_name }}</a></p>
-      {% include navigation.html %}
     </footer>
+
   </body>
 </html>
