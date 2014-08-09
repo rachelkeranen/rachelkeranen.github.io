@@ -1,9 +1,9 @@
 <nav>
   <ul>
-    <li><a href='/bio'>Bio</a></li>
-    <li><a href='/journalism'>Journalism</a></li>
-    <li><a href='/technical-writing'>Technical Writing</a></li>
-    <li><a href='/marketing-communications'>Marketing Communications</a></li>
-    <li><a href='/contact'>Contact</a></li>
+    {% for link in site.navigation %}
+      <li {% if page.url == link.url %}class='current'{% endif %}>
+        <a href='{{ link.url }}'>{{ link.text }}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>

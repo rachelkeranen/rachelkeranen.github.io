@@ -21,3 +21,16 @@ defaults:
 kramdown:
   entity_output: as_input
   smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# used for generating the main page navigation
+navigation:
+- text: Bio
+  url: /bio/
+- text: Journalism
+  url: /journalism/
+- text: Technical Writing
+  url: /technical-writing/
+- text: Marketing Communications
+  url: /marketing-communications/
+- text: Contact
+  url: /contact/

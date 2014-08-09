@@ -1,0 +1,97 @@
+---
+---
+
+$color-base:    #555
+$color-blue:    #294284
+$color-brown:   #833422
+$color-green:   #9fcf5b
+$color-orange:  #c85f46
+$font-headings: Helvetica, sans-serif
+$body-width:    700px
+
+body
+  color: $color-base
+  font-family: 'Palatino Linotype', 'Book Antiqua', serif
+  font-size:   14px
+
+.decorative
+  background-color: $color-orange
+  .inner
+    background: transparent url('/images/background_colors.png') repeat-y left top
+    height:     0.5em
+
+.inner
+  margin:    0px auto
+  max-width: $body-width
+
+main
+  margin:    0px auto
+  max-width: $body-width
+  padding:   0px 10px
+
+header
+  background: transparent url('/images/gradient.png') repeat-x left top
+  border-top: 1px solid white
+  padding:    3em 0px
+  h1
+    font-family: $font-headings
+    margin:     0px
+    text-align: center
+    a
+      color:           #BBB
+      font-size:       3em
+      font-weight:     300
+      letter-spacing:  -0.02em
+      text-decoration: none
+      &:hover
+        color: #999
+
+nav
+  overflow-x: auto
+  ul
+    padding:    0px
+    margin:     0px
+    text-align: center
+    li
+      display: inline-block
+      a
+        border:          none
+        color:           $color-orange
+        display:         block
+        font-size:       1.1em
+        font-style:      italic
+        padding:         10px
+        text-decoration: none
+        &:hover
+          background-color: $color-orange
+          color:            white
+      &.current
+        a
+          background-color: $color-orange
+          color:            white
+
+main, footer
+  a
+    color: $color-orange
+    border-bottom: 1px dashed $color-orange
+    text-decoration: none
+    &:hover
+      color: $color-brown
+      border-bottom-color: $color-brown
+
+
+  h1, h2, h3, h4, h5, h6
+    font-family: $font-headings
+    a
+      border: none
+
+  h2
+    font-weight: normal
+
+  p, li
+    line-height: 1.5em
+
+
+footer
+  padding-top: 3em
+  text-align: center
